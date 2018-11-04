@@ -1,7 +1,10 @@
-defmodule Rumbl.VideoController do
+ defmodule Rumbl.VideoController do
   use Rumbl.Web, :controller
 
   alias Rumbl.Video
+  alias Rumbl.Category
+
+  plug :load_categories when action in [:new, :create, :edit, :update]
 
   def action(conn, _) do
     apply(__MODULE__, action_name(conn), [conn, conn.params, conn.assigns.current_user])
@@ -12,7 +15,8 @@ defmodule Rumbl.VideoController do
     render(conn, "index.html", videos: videos)
   end
 
-  def new(conn, _params, user) do
+  def new(conn, params, user) do
+    IO.puts(params)
     changeset =
       user
       |> build_assoc(:videos)
@@ -49,6 +53,7 @@ defmodule Rumbl.VideoController do
   end
 
   def update(conn, %{"id" => id, "video" => video_params}, user) do
+    IO.inspect(video_params)
     video = Repo.get!(user_videos(user), id)
     changeset = Video.changeset(video, video_params)
 
@@ -72,6 +77,16 @@ defmodule Rumbl.VideoController do
     conn
     |> put_flash(:info, "Video deleted successfully.")
     |> redirect(to: video_path(conn, :index))
+  end
+
+  defp load_categories(conn, _) do
+    categories =
+      Category
+      |> Category.alphabetical
+      |> Category.names_and_ids
+      |> Repo.all
+
+    assign(conn, :categories, categories)
   end
 
   defp user_videos(user) do
