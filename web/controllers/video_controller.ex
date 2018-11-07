@@ -1,10 +1,12 @@
  defmodule Rumbl.VideoController do
   use Rumbl.Web, :controller
+  import Rumbl.Auth
 
   alias Rumbl.Video
   alias Rumbl.Category
 
   plug :load_categories when action in [:new, :create, :edit, :update]
+  plug :authenticate_user
 
   def action(conn, _) do
     apply(__MODULE__, action_name(conn), [conn, conn.params, conn.assigns.current_user])
@@ -15,8 +17,7 @@
     render(conn, "index.html", videos: videos)
   end
 
-  def new(conn, params, user) do
-    IO.puts(params)
+  def new(conn, _params, user) do
     changeset =
       user
       |> build_assoc(:videos)
@@ -35,7 +36,7 @@
       {:ok, video} ->
         conn
         |> put_flash(:info, "Video created successfully.")
-        |> redirect(to: video_path(conn, :show, video))
+        |> redirect(to: video_path(conn, :index))
       {:error, changeset} ->
         render(conn, "new.html", changeset: changeset)
     end
