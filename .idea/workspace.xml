@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cba05d1-6dfe-4d4d-9f35-2de38aea7ae2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/controllers/watch_controller.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/css/video.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/js/player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/watch/show.html.eex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/watch_view.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/permalink.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/models/video.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/video.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/video/index.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/video/index.html.eex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +27,17 @@
       <file leaf-file-name="video.ex" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/models/video.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="51">
+              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permalink.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rumbl/permalink.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -59,6 +61,7 @@
         <option value="$PROJECT_DIR$/web/static/js/app.js" />
         <option value="$PROJECT_DIR$/web/static/css/video.css" />
         <option value="$PROJECT_DIR$/priv/repo/migrations/20181108193120_add_slug_to_video.exs" />
+        <option value="$PROJECT_DIR$/lib/rumbl/permalink.ex" />
         <option value="$PROJECT_DIR$/web/models/video.ex" />
       </list>
     </option>
@@ -100,57 +103,18 @@
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
-              <item name="repo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
-              <item name="repo" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,12 +152,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541692907055</updated>
-      <workItem from="1541692909492" duration="6277000" />
+      <workItem from="1541692909492" duration="7813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6277000" />
+    <option name="totallyTimeSpent" value="7813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -316,10 +280,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rumbl/permalink.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/models/video.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="51">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
         </state>
       </provider>
     </entry>
