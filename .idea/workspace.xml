@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cba05d1-6dfe-4d4d-9f35-2de38aea7ae2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/rumbl/permalink.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/js/video.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/video.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/video.ex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.ex" pinned="false" current-in-tab="true">
+      <file leaf-file-name="video.ex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/models/video.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -33,11 +32,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="video.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="permalink.ex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/rumbl/permalink.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -63,6 +71,7 @@
         <option value="$PROJECT_DIR$/priv/repo/migrations/20181108193120_add_slug_to_video.exs" />
         <option value="$PROJECT_DIR$/lib/rumbl/permalink.ex" />
         <option value="$PROJECT_DIR$/web/models/video.ex" />
+        <option value="$PROJECT_DIR$/web/static/js/video.js" />
       </list>
     </option>
   </component>
@@ -108,13 +117,20 @@
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,12 +168,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541692907055</updated>
-      <workItem from="1541692909492" duration="7813000" />
+      <workItem from="1541692909492" duration="9324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7813000" />
+    <option name="totallyTimeSpent" value="9324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -239,13 +255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/js/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -283,7 +292,7 @@
     <entry file="file://$PROJECT_DIR$/lib/rumbl/permalink.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -291,6 +300,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
         </state>
       </provider>
     </entry>
