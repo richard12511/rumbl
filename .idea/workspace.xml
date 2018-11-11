@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cba05d1-6dfe-4d4d-9f35-2de38aea7ae2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/channels/video_channel.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/channels/user_socket.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/channels/user_socket.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/socket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/auth.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/auth.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout/app.html.eex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video_channel.ex" pinned="false" current-in-tab="true">
+      <file leaf-file-name="video_channel.ex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/channels/video_channel.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -54,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="permalink.ex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/rumbl/permalink.ex">
+      <file leaf-file-name="user_socket.ex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/channels/user_socket.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="697">
+              <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/static/js/socket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +81,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/controllers/user_controller.ex" />
-        <option value="$PROJECT_DIR$/web/templates/layout/app.html.eex" />
         <option value="$PROJECT_DIR$/web/templates/watch/show.html.eex" />
         <option value="$PROJECT_DIR$/web/views/watch_view.ex" />
         <option value="$PROJECT_DIR$/web/router.ex" />
@@ -85,9 +93,11 @@
         <option value="$PROJECT_DIR$/web/models/video.ex" />
         <option value="$PROJECT_DIR$/web/static/js/app.js" />
         <option value="$PROJECT_DIR$/web/static/js/socket.js" />
-        <option value="$PROJECT_DIR$/web/channels/user_socket.ex" />
         <option value="$PROJECT_DIR$/web/static/js/video.js" />
         <option value="$PROJECT_DIR$/web/channels/video_channel.ex" />
+        <option value="$PROJECT_DIR$/web/templates/layout/app.html.eex" />
+        <option value="$PROJECT_DIR$/web/controllers/auth.ex" />
+        <option value="$PROJECT_DIR$/web/channels/user_socket.ex" />
       </list>
     </option>
   </component>
@@ -154,6 +164,19 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -190,12 +213,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541692907055</updated>
-      <workItem from="1541692909492" duration="14874000" />
+      <workItem from="1541692909492" duration="24001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14874000" />
+    <option name="totallyTimeSpent" value="24001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -239,13 +262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/layout/app.html.eex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -332,23 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/channels/user_socket.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/js/socket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="718">
@@ -356,10 +355,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/auth.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/layout/app.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/channels/video_channel.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/channels/user_socket.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
         </state>
       </provider>
     </entry>
