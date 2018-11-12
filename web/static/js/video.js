@@ -30,6 +30,14 @@ let Video = {
             msgInput.value = ""
         })
 
+        msgContainer.addEventListener("click", e => {
+            e.preventDefault()
+            let seconds = e.target.getAttribute("data-seek") || e.target.parentNode.getAttribute("data-seek")
+            if (!seconds) { return }
+
+            Player.seekTo(seconds)
+        })
+
         vidChannel.on("new_annotation", (resp) => {
             this.renderAnnotation(msgContainer, resp)
         })
@@ -37,7 +45,9 @@ let Video = {
         vidChannel.on("ping", ({count}) => console.log("PING", count))
 
         vidChannel.join()
-            .receive("ok", resp => console.log("joined the video channel", resp))
+            .receive("ok", resp => {
+                this.scheduleMessages(msgContainer, resp.annotations)
+            })
             .receive("error", reason => console.log("join failed", reason))
 
     },
@@ -49,11 +59,40 @@ let Video = {
     },
 
     renderAnnotation(msgContainer, {user, body, at}){
+        console.log()
         let template = document.createElement("div")
-        template.innerHTML = `<a href="#" data-seek="${this.esc(at)}"><b>${this.esc(user.username)}</b>: ${this.esc(body)}</a>`
+        template.innerHTML = `<a href="#" data-seek="${this.esc(at)}">[${this.formatTime(at)}]<b>${this.esc(user.username)}</b>: ${this.esc(body)}</a>`
         msgContainer.appendChild(template)
         msgContainer.scrollTop = msgContainer.scrollHeight
+    },
+
+    scheduleMessages(msgContainer, annotations){
+        setTimeout(() => {
+                let ctime = Player.getCurrentTime()
+                let remaining = this.renderAtTime(annotations, ctime, msgContainer)
+            }, 1000)
+    },
+
+    renderAtTime(annotations, seconds, msgContainer){
+        return annotations.filter(ann => {
+            if(ann.at > seconds){
+                return true
+            } else {
+                this.renderAnnotation(msgContainer, ann)
+                return false
+            }
+          })
+    },
+
+    formatTime(at){
+        let date = new Date()
+        date.setSeconds(at/1000)
+        let isoString = date.toISOString()
+        
+        return isoString.split(":")[1] + ":" + isoString.split(":")[2]
     }
+
 }
+
 
 export default Video
