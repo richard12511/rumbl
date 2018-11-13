@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cba05d1-6dfe-4d4d-9f35-2de38aea7ae2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/views/annotation_view.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/counter.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/channels/video_channel.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/channels/video_channel.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/static/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout/app.html.eex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +19,17 @@
       <file leaf-file-name="video_channel.ex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/channels/video_channel.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+            <state relative-caret-position="323">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="counter.ex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/rumbl/counter.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -44,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="video.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="90" column="69" selection-start-line="90" selection-start-column="69" selection-end-line="90" selection-end-column="69" />
+            <state relative-caret-position="267">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -85,8 +93,9 @@
         <option value="$PROJECT_DIR$/web/channels/user_socket.ex" />
         <option value="$PROJECT_DIR$/web/templates/layout/app.html.eex" />
         <option value="$PROJECT_DIR$/web/views/annotation_view.ex" />
-        <option value="$PROJECT_DIR$/web/channels/video_channel.ex" />
         <option value="$PROJECT_DIR$/web/static/js/video.js" />
+        <option value="$PROJECT_DIR$/web/channels/video_channel.ex" />
+        <option value="$PROJECT_DIR$/lib/rumbl/counter.ex" />
       </list>
     </option>
   </component>
@@ -122,6 +131,17 @@
           <expand>
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -196,12 +216,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541692907055</updated>
-      <workItem from="1541692909492" duration="32498000" />
+      <workItem from="1541692909492" duration="36530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32498000" />
+    <option name="totallyTimeSpent" value="36530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -397,17 +417,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/channels/video_channel.ex">
+    <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        <state relative-caret-position="267">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
+    <entry file="file://$PROJECT_DIR$/web/channels/video_channel.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="90" column="69" selection-start-line="90" selection-start-column="69" selection-end-line="90" selection-end-column="69" />
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rumbl/counter.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

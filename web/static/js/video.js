@@ -39,14 +39,22 @@ let Video = {
         })
 
         vidChannel.on("new_annotation", (resp) => {
+            vidChannel.params.last_seen_id = resp.id
             this.renderAnnotation(msgContainer, resp)
         })
 
         vidChannel.on("ping", ({count}) => console.log("PING", count))
 
         vidChannel.join()
-            .receive("ok", resp => {
-                this.scheduleMessages(msgContainer, resp.annotations)
+            .receive("ok", ({annotations}) => {
+                // this.scheduleMessages(msgContainer, resp.annotations)
+                let ids = annotations.map(ann => ann.id)
+                if(ids.length > 0){
+                    vidChannel.params.last_seen_id = Math.max(...ids)
+                }
+                annotations.forEach(ann => {
+                    this.renderAnnotation(msgContainer, ann)
+                })
             })
             .receive("error", reason => console.log("join failed", reason))
 
@@ -61,7 +69,7 @@ let Video = {
     renderAnnotation(msgContainer, {user, body, at}){
         console.log()
         let template = document.createElement("div")
-        template.innerHTML = `<a href="#" data-seek="${this.esc(at)}">[${this.formatTime(at)}]<b>${this.esc(user.username)}</b>: ${this.esc(body)}</a>`
+        template.innerHTML = `<a href="#" data-seek="${this.esc(at)}"><b>${this.esc(user.username)}</b>: ${this.esc(body)}</a>`
         msgContainer.appendChild(template)
         msgContainer.scrollTop = msgContainer.scrollHeight
     },
@@ -88,7 +96,7 @@ let Video = {
         let date = new Date()
         date.setSeconds(at/1000)
         let isoString = date.toISOString()
-        
+
         return isoString.split(":")[1] + ":" + isoString.split(":")[2]
     }
 
