@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cba05d1-6dfe-4d4d-9f35-2de38aea7ae2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/rumbl/counter.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dev.secret.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/info_sys.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/info_sys/supervisor.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/info_sys/wolfram.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/channels/video_channel.ex" beforeDir="false" afterPath="$PROJECT_DIR$/web/channels/video_channel.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl/counter.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl/counter.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,47 +23,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="video_channel.ex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/channels/video_channel.ex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="counter.ex" pinned="false" current-in-tab="true">
+      <file leaf-file-name="counter.ex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/rumbl/counter.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="476">
+              <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_socket.ex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/channels/user_socket.ex">
+      <file leaf-file-name="supervisor.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rumbl/info_sys/supervisor.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="204">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.html.eex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/layout/app.html.eex">
+      <file leaf-file-name="rumbl.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rumbl.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="238">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/static/js/video.js">
+      <file leaf-file-name="info_sys.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rumbl/info_sys.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mix.exs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mix.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.exs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/dev.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wolfram.ex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/rumbl/info_sys/wolfram.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -96,6 +121,14 @@
         <option value="$PROJECT_DIR$/web/static/js/video.js" />
         <option value="$PROJECT_DIR$/web/channels/video_channel.ex" />
         <option value="$PROJECT_DIR$/lib/rumbl/counter.ex" />
+        <option value="$PROJECT_DIR$/lib/rumbl/info_sys/supervisor.ex" />
+        <option value="$PROJECT_DIR$/lib/rumbl.ex" />
+        <option value="$PROJECT_DIR$/lib/rumbl/info_sys.ex" />
+        <option value="$PROJECT_DIR$/mix.exs" />
+        <option value="$PROJECT_DIR$/config/dev.secret.exs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/dev.exs" />
+        <option value="$PROJECT_DIR$/lib/rumbl/info_sys/wolfram.ex" />
       </list>
     </option>
   </component>
@@ -143,6 +176,13 @@
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="rumbl" type="462c0819:PsiDirectoryNode" />
+              <item name="info_sys" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rumbl" type="b2602c69:ProjectViewProjectNode" />
@@ -216,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541692907055</updated>
-      <workItem from="1541692909492" duration="36530000" />
+      <workItem from="1541692909492" duration="41182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36530000" />
+    <option name="totallyTimeSpent" value="41182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -433,8 +473,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/rumbl/counter.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="476">
+          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rumbl/info_sys/supervisor.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rumbl.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rumbl/info_sys.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.secret.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/prod.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rumbl/info_sys/wolfram.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
